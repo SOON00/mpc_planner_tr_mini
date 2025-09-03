@@ -1,0 +1,41 @@
+repositories:
+    mpc_planner:
+        type: git
+        url: https://github.com/tud-amr/mpc_planner.git
+        version: cc71e45fcd8263b1a43d2af500c3696860b4b8a5
+    guidance_planner:
+        type: git
+        url: https://github.com/tud-amr/guidance_planner.git
+        version: 2c4188371e18e2fb3d083e0867b5e4d537a42860
+    ros_tools:
+        type: git
+        url: https://github.com/oscardegroot/ros_tools.git
+        version: f2ff45830961db8d3d813ee4769f27eea708e989
+    pedestrian_simulator:
+        type: git
+        url: https://github.com/oscardegroot/pedestrian_simulator.git
+        version: 41f61ad421d769efc1f63d5e797c62a684bad218
+    pedsim_original:
+        type: git
+        url: https://github.com/oscardegroot/pedsim_original.git
+        version: 8b5d63483089faf8535bf51e2061cda2c773fd37
+    roadmap:
+        type: git
+        url: https://github.com/oscardegroot/roadmap.git
+        version: a82d1cb93a60d0fdf19e8cee8bf0b63aa3b61e1d
+    jackal_simulator:
+        type: git
+        url: https://github.com/oscardegroot/jackal_simulator.git
+        version: 70f32759a97c08829faa9f30805fee6b9ba2e9fa
+    asr_rapidxml:
+        type: git
+        url: https://github.com/oscardegroot/asr_rapidxml.git
+        version: 16d1f87d7d5230995f72491d2b2da545065ebc08
+    decomp_util:
+        type: git
+        url: https://github.com/oscardegroot/DecompUtil.git
+        version: b4211a130ada47d458105a3a29559d3f6caa52c4
+    scenario_module:
+        type: git
+        url: https://github.com/oscardegroot/scenario_module.git
+        version: c11addbb7239752d585beb181e8f9197893c6c53
