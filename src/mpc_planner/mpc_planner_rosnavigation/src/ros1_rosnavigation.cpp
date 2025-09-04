@@ -254,7 +254,7 @@ namespace local_planner
             ROS_WARN_STREAM("Detected flipped robot. Resetting.");
             reset(false); // Reset without success
         }
-        ROS_INFO_STREAM("Updated _state: x=" << _state.get("x") << ", y=" << _state.get("y") << ", psi=" << _state.get("psi") << ", v=" << _state.get("v"));
+        // ROS_INFO_STREAM("Updated _state: x=" << _state.get("x") << ", y=" << _state.get("y") << ", psi=" << _state.get("psi") << ", v=" << _state.get("v"));
     }
 
     void ROSNavigationPlanner::goalCallback(const geometry_msgs::PoseStamped::ConstPtr &msg)

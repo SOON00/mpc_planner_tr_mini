@@ -30,4 +30,9 @@
     <param name="use_gui" value="true"/>
     <param name="rate" value="50"/>
   </node>
+
+  <arg name="topology" default="$(find turtlebot3_navigation)/scripts/topology.yaml"/>
+  <node pkg="turtlebot3_navigation" type="topology_path_publisher.py" name="topology_global_planner_node" output="screen">
+    <param name="topology_yaml" value="$(arg topology)"/>
+  </node>
 </launch>

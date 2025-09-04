@@ -19,12 +19,21 @@
   <depend>ros_tools</depend>
   <!-- <depend>dynamic_reconfigure</depend> -->
   <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
   <depend>nav_core</depend>
   <depend>base_local_planner</depend>
   <depend>costmap_2d</depend>
   <depend>costmap_converter</depend>
 
   <depend>nav_msgs</depend>
+  
+  <depend>geometry_msgs</depend>
+  
+  <depend>angles</depend>
+  
+  <depend>pluginlib</depend>
+  
+  <depend>navfn</depend>
 
   <!-- <exec_depend>pedestrian_simulator</exec_depend> -->
   <exec_depend>jackal_gazebo</exec_depend>

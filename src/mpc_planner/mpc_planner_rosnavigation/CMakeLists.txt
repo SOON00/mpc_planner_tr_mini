@@ -19,6 +19,12 @@ set(DEPENDENCIES
   nav_msgs
   # dynamic_reconfigure
   # tf2_ros
+  tf2_ros
+  tf2_geometry_msgs
+  geometry_msgs
+  angles
+  pluginlib
+  navfn
 )
 
 # find dependencies
@@ -49,6 +55,7 @@ catkin_install_python(PROGRAMS
 
 add_library(${PROJECT_NAME}
   src/ros1_rosnavigation.cpp
+  src/custom_global_planner.cpp
 )
 add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
