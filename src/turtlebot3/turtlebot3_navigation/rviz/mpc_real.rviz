@@ -98,12 +98,17 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_back_left_link:
+        camera_Link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_back_right_link:
+        fl_Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        fr_Link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -113,12 +118,12 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_left_link:
+        rl_Link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_right_link:
+        rr_Link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -129,6 +134,67 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 25; 255; 0
+      Enabled: true
+      Name: footprint
+      Queue Size: 10
+      Topic: /move_base/local_costmap/footprint
+      Unreliable: false
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        camera_Link:
+          Value: true
+        fl_Link:
+          Value: true
+        fr_Link:
+          Value: true
+        laser:
+          Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
+        rl_Link:
+          Value: true
+        rr_Link:
+          Value: true
+      Marker Alpha: 1
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            base_footprint:
+              base_link:
+                camera_Link:
+                  {}
+                fl_Link:
+                  {}
+                fr_Link:
+                  {}
+                laser:
+                  {}
+                rl_Link:
+                  {}
+                rr_Link:
+                  {}
+      Update Interval: 0
+      Value: true
     - Class: rviz/Group
       Displays:
         - Class: rviz/MarkerArray
@@ -438,54 +504,6 @@ Visualization Manager:
         {}
       Queue Size: 100
       Value: true
-    - Class: rviz/TF
-      Enabled: true
-      Filter (blacklist): ""
-      Filter (whitelist): ""
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-        base_footprint:
-          Value: true
-        base_link:
-          Value: true
-        caster_back_left_link:
-          Value: true
-        caster_back_right_link:
-          Value: true
-        laser:
-          Value: true
-        map:
-          Value: true
-        odom:
-          Value: true
-        wheel_left_link:
-          Value: true
-        wheel_right_link:
-          Value: true
-      Marker Alpha: 1
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        map:
-          odom:
-            base_footprint:
-              base_link:
-                caster_back_left_link:
-                  {}
-                caster_back_right_link:
-                  {}
-                laser:
-                  {}
-                wheel_left_link:
-                  {}
-                wheel_right_link:
-                  {}
-      Update Interval: 0
-      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -626,10 +644,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 53.686805725097656
+      Scale: 48.09950637817383
       Target Frame: <Fixed Frame>
-      X: 6.738558292388916
-      Y: 0.5193414688110352
+      X: 6.130208969116211
+      Y: 0.2552271783351898
     Saved: ~
 Window Geometry:
   Displays:
